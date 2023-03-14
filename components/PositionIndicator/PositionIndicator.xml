@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <component name="PositionIndicator" extends="Group"> 
 	<script type="text/brightscript" uri="PositionIndicator.brs" />
+
+    <interface>
+        <field id="numberOfPages" type="integer" onChange="onNumberOfPagesChange"/>
+        <field id="highlightIndex" type="integer" onChange="onHighlightIndexChange"/>
+    </interface>
+
 	<children>
-      <Rectangle id="backgroundRect" width="200" height="60" />
+      <layoutGroup id="indicatorLayoutGroup" layoutDirection="horiz" itemspacings="[10]"/>
   </children>
 </component>
