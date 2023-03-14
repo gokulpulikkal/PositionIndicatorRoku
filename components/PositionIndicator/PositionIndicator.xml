@@ -8,6 +8,6 @@
     </interface>
 
 	<children>
-      <layoutGroup id="indicatorLayoutGroup" layoutDirection="horiz" itemspacings="[10]"/>
+        <layoutGroup id="indicatorLayoutGroup" layoutDirection="horiz" itemspacings="[10]"/>
   </children>
 </component>

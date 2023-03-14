@@ -3,6 +3,8 @@
 	<script type="text/brightscript" uri="IndicatorItem.brs" />
 
     <interface>
+        <field id="indicatorWidth" type="float" value="18" />
+        <field id="indicatorHeight" type="float" value="18" />
         <field id="isHighLighted" type="boolean" value="false" onChange="onHighlightStatusChange"/>
     </interface>
 
