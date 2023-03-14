@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<component name="PositionIndicator" extends="Group"> 
-	<script type="text/brightscript" uri="PositionIndicator.brs" />
-	<children>
-      <Rectangle id="backgroundRect" width="200" height="60" />
-  </children>
-</component>
