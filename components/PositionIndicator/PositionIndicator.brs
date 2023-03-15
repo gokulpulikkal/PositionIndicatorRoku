@@ -7,6 +7,10 @@ function init() as void
     m.indicatorLayoutGroup = m.top.findNode("indicatorLayoutGroup")
 end function
 
+'''''''''
+' onNumberOfPagesChange: Number of pages change will determine how many position indicator needs to be shown in the view
+' 
+'''''''''
 function onNumberOfPagesChange() as void
     m.indicatorLayoutGroup.removeChildrenIndex(m.indicatorLayoutGroup.getChildCount(), 0)
     childCount = m.top.numberOfPages
@@ -19,6 +23,10 @@ function onNumberOfPagesChange() as void
     end for
 end function
 
+'''''''''
+' onHighlightIndexChange: This callback function will highLight appropriate position indicator
+' 
+'''''''''
 function onHighlightIndexChange() as void
     highlightIndex = m.top.highlightIndex
     if (highlightIndex < m.indicatorLayoutGroup.getChildCount() AND highlightIndex >= 0)
@@ -27,6 +35,10 @@ function onHighlightIndexChange() as void
     end if
 end function
 
+'''''''''
+' removeHighlightFromItems: For removing all position indicators in the view group
+' 
+'''''''''
 function removeHighlightFromItems() as void
     for i = 0 to m.indicatorLayoutGroup.getChildCount() - 1
         m.indicatorLayoutGroup.getChild(i).isHighLighted = false

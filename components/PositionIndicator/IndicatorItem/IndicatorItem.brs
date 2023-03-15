@@ -27,12 +27,22 @@ function reloadView() as void
 end function
 
 '''''''''
+' onHighLightScaleFactorChange: callback when changing highLightScale factor of the item
+' 
+'''''''''
+function onHighLightScaleFactorChange() as void
+    highLightScaleFactor = m.top.highLightScaleFactor
+    m.scaleInterPolator.keyValue = [ [1, 1], [highLightScaleFactor, 1]]
+end function
+
+'''''''''
 ' onSettingId: Callback function to get id of th view when setting or changing it
 ' 
 '''''''''
 function onSettingId() as void
     m.scaleInterPolator.fieldToInterp = m.top.id + ".scale"
-    m.scaleInterPolator.keyValue = [ [1, 1], [3, 1]]
+    highLightScaleFactor = m.top.highLightScaleFactor
+    m.scaleInterPolator.keyValue = [ [1, 1], [highLightScaleFactor, 1]]
 end function
 
 '''''''''

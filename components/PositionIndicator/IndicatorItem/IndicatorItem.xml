@@ -5,11 +5,12 @@
     <interface>
         <field id="indicatorWidth" type="float" value="18" onChange="reloadView"/>
         <field id="indicatorHeight" type="float" value="18" onChange="reloadView"/>
+        <field id="highLightScaleFactor" type="float" value="3" onChange="onHighLightScaleFactorChange"/>
         <field id="isHighLighted" type="boolean" value="false" onChange="onHighlightStatusChange"/>
     </interface>
 
 	<children>
-        <Animation id="widthScalingAnimation" duration="0.2" easeFunction="outExpo">
+        <Animation id="widthScalingAnimation" duration="0.3" easeFunction="outQuad">
             <Vector2DFieldInterpolator id="scaleInterPolator" key="[0.0, 1.0]"/>
         </Animation>
     </children>

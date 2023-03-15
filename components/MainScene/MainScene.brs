@@ -1,11 +1,14 @@
 function init() as void
     m.positionIndicator = m.top.findNode("positionIndicator")
 
+    ' Setting needed values for the pageControl
+    m.positionIndicator.numberOfPages = 5
+    m.positionIndicator.highlightIndex = 2
+
+    ' Changing the translation of the pageControl. Setting it to the center of the screen
     boundingRect = m.positionIndicator.boundingRect()
     m.positionIndicator.translation = [(1920 - boundingRect.width)/2, (1080 - boundingRect.width)/2]
 
-    m.positionIndicator.numberOfPages = 5
-    m.positionIndicator.highlightIndex = 2
     m.positionIndicator.setFocus(true)
 end function
 
