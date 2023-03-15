@@ -10,7 +10,7 @@
     </interface>
 
 	<children>
-        <Animation id="widthScalingAnimation" duration="0.3" easeFunction="outQuad">
+        <Animation id="widthScalingAnimation" duration="0.1" easeFunction="inOutExpo">
             <Vector2DFieldInterpolator id="scaleInterPolator" key="[0.0, 1.0]"/>
         </Animation>
     </children>
