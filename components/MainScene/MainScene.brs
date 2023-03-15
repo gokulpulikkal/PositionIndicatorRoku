@@ -21,6 +21,13 @@ function onKeyEvent(key as String, press as Boolean) as Boolean
                 m.positionIndicator.highlightIndex--
             end if
             handled = true
+        else if (key = "right")
+            if (m.positionIndicator.highlightIndex = m.positionIndicator.numberOfPages - 1)
+                m.positionIndicator.highlightIndex = 0
+            else
+                m.positionIndicator.highlightIndex++
+            end if
+            handled = true
         end if
     end if
     return handled

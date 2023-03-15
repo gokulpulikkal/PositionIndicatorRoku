@@ -1,4 +1,8 @@
 
+'''''''''
+' init: First function that'll execute when creating this component
+' 
+'''''''''
 function init() as void
     m.indicatorLayoutGroup = m.top.findNode("indicatorLayoutGroup")
 end function
@@ -9,6 +13,8 @@ function onNumberOfPagesChange() as void
     for i = 0 to childCount - 1
         indicatorItem = CreateObject("roSGNode", "IndicatorItem")
         indicatorItem.id = "indicator_" + i.toStr()
+        indicatorItem.indicatorWidth = 30
+        indicatorItem.indicatorHeight = 30
         m.indicatorLayoutGroup.appendChild(indicatorItem)
     end for
 end function
