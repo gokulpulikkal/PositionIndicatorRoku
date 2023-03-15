@@ -4,9 +4,9 @@
   <i>Simple PageControl component for using in roku projects.</i>
 </p>
 
-
-![ezgif com-video-to-gif](https://user-images.githubusercontent.com/52960334/225421235-8b86a85b-f03a-4908-ad39-ed64304ffc3a.gif)
-
+<p align="center" width="100%">
+<img src="https://user-images.githubusercontent.com/52960334/225421235-8b86a85b-f03a-4908-ad39-ed64304ffc3a.gif" alt="animated" />
+</p>
 
 ## 🧐 About
 
