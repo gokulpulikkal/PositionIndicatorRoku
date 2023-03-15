@@ -18,8 +18,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### 💻 Usage
 
-1. copy the position indicator folder and its files to your components directory
-2. Use PositionIndicator component where you need to show the view
+1. copy the PositionIndicator folder and its files to your components directory
+2. Add PositionIndicator component where you need to show the view
 3. set necessary fields of the PositionIndicator component.
 
 ## 🌟 Fields
