@@ -6,5 +6,22 @@ function init() as void
 
     m.positionIndicator.numberOfPages = 5
     m.positionIndicator.highlightIndex = 2
+    m.positionIndicator.setFocus(true)
+end function
 
+function onKeyEvent(key as String, press as Boolean) as Boolean
+    handled = false
+    if press then
+        if (key = "back") then
+            handled = false
+        else if (key = "left")
+            if (m.positionIndicator.highlightIndex = 0)
+                m.positionIndicator.highlightIndex = m.positionIndicator.numberOfPages - 1
+            else
+                m.positionIndicator.highlightIndex--
+            end if
+            handled = true
+        end if
+    end if
+    return handled
 end function

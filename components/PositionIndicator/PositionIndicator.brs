@@ -7,7 +7,9 @@ function onNumberOfPagesChange() as void
     m.indicatorLayoutGroup.removeChildrenIndex(m.indicatorLayoutGroup.getChildCount(), 0)
     childCount = m.top.numberOfPages
     for i = 0 to childCount - 1
-        m.indicatorLayoutGroup.appendChild(CreateObject("roSGNode", "IndicatorItem"))
+        indicatorItem = CreateObject("roSGNode", "IndicatorItem")
+        indicatorItem.id = "indicator_" + i.toStr()
+        m.indicatorLayoutGroup.appendChild(indicatorItem)
     end for
 end function
 

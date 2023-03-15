@@ -8,5 +8,9 @@
         <field id="isHighLighted" type="boolean" value="false" onChange="onHighlightStatusChange"/>
     </interface>
 
-	<children/>
+	<children>
+        <Animation id="widthScalingAnimation" duration="0.2" easeFunction="linear">
+            <FloatFieldInterpolator id="widthInterPolator" key="[0.0, 1.0]"/>
+        </Animation>
+    </children>
 </component>
