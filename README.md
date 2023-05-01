@@ -10,7 +10,7 @@
 
 ## 🧐 About
 
-This is a simple easy to use pageControl component. This can be used as postion indicator in Higlight views or any other such views that needs a item counter and position indicator
+This is a simple easy to use pageControl component. This can be used as a position indicator in Highlight views or any other such views that need an item counter and position indicator
 
 ## 🏁 Getting Started
 
